@@ -14,7 +14,7 @@ RUN \
   echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu wily main" | tee -a /etc/apt/sources.list && \
   echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | debconf-set-selections && \
   apt-get update && \
-  apt-get install -y --force-yes oracle-java8-installer && \
+  apt-get install -y --force-yes oracle-java8-installer git && \
   rm -rf /var/lib/apt/lists/* && \
   rm -rf /var/cache/oracle-jdk8-installer && \
   mkdir -p /usr/bin/jenkins && \
