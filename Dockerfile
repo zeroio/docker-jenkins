@@ -17,7 +17,7 @@ RUN \
   rm -rf /var/lib/apt/lists/* && \
   rm -rf /var/cache/oracle-jdk8-installer && \
   mkdir -p /usr/bin/jenkins && \
-  wget --directory-prefix=/usr/bin/jenkins http://mirrors.jenkins-ci.org/war/latest/jenkins.war && \
+  wget --directory-prefix=/usr/bin/jenkins http://mirrors.jenkins-ci.org/war-rc/2.0/jenkins.war && \
   chmod ug+x /usr/bin/jenkins/jenkins.war
 
 
